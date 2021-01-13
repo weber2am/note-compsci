@@ -3,7 +3,7 @@
 Give sudo to pi user.
 ```
 $ cd /etc/sudoers.d
-$ sudo mv 010-pi-nopasswd 010-pi-nopasswd.orig
+$ sudo mv 010_pi-nopasswd 010_pi-nopasswd.orig
 ```
 
 Get dotfiles.
