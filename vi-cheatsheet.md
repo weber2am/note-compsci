@@ -14,7 +14,7 @@ W,B,E    only whitespace breaks word
 gg   go first line
 G    go last line
 :n   go to line n
-z    move current line to center of screen
+zz   move current line to center of screen
 
 0    first column
 ^    first non-whitespace

@@ -41,3 +41,5 @@ $ java -jar drjava-rest-of-fname
 $ java -jar drjava-rest-of-fname &>/dev/null &
 ```
 The first command keeps that terminal occupied until the drjava window is closed.  The 2nd command separates the drjava window from the terminal, so you can continue using the terminal.
+
+At `drjava.org` you can get their documentation by clicking the `documentation` link.
