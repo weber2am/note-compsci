@@ -124,3 +124,40 @@ $ git commit
 $ git push
 ```
 
+## Coordinate on Shared Repo
+
+Imagine both you and other people are updating a repo.  
+What problems are likely to happen?  
+How can you handle them?
+
+### The Main Problem
+
+The main problem happens like this:
+
+1. everyone pulls the central repo
+1. someone else pushes changes to the central repo
+1. you make local changes and try to push them to the central repo
+
+At this point, git will not allow you to push your changes.  
+You need to be up to date with the central repo before you can push.
+
+### How to Handle it
+
+Use this sequence to avoid (most of) the problem:
+
+1. make your changes locally
+1. `git stash`
+1. `git pull`
+1. `git stash pop`
+1. `git add`, `git commit`, `git push`
+
+Rarely, there may still be a problem.  If you and the other(s) have changed the same code, git will not know how to combine it.  The problem will show up when you do `git stash pop`.  You will get an error message.  At that point, learn how to resolve the conflict.  Then, add, commit, and push your changes.
+
+
+
+
+
+
+
+
+
